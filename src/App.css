@@ -2,35 +2,93 @@
   margin: 0;
   padding: 0;
 }
-.title{
+#root {
+  width: 100%;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.title {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 1rem;
+}
+.font-title {
+  font-size: 3rem;
 }
 .subtitle {
-  text-align: center;
+  width: 20rem;
+  border: 1px solid #414141;
+  border-radius: 37px;
+  padding: 0.5rem;
+  color: #D7D7D7;
+  background-color: #181818;
 }
-.b-color-1616 {
+.container {
+  margin-top: 1rem;
   background-color: #161616;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
 }
-.cards{
+.cards-container {
+  display: flex;
+  gap: 6rem;
+}
+.cards {
   background-color: #252525;
-  width: 30%;
+  width: 21.69rem;
+  height: 13.81rem;
   border-radius: 8px;
   border: 1px solid #414141;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
 }
-.font-small{
-  font-size: 12px;
+/* .d-flex {
+  display: flex;
 }
-.font-medium{
-  font-size: 16px;
+.flex-column {
+  flex-direction: column;
 }
-.font-large{
- font-size: 24px;
+.justify-content-center {
+  justify-content: center;
+} */
+.mb-05rem {
+  margin-bottom: 0.4rem;
+}
+.font-small {
+  font-size: 0.75rem;
+}
+.font-medium {
+  font-size: 1rem;
+  color: #C9C9C9;
+}
+.font-large {
+ font-size: 1.5rem;
+ color: white;
+}
+.hanken-medium {
+  font-family: 'HankenGrotesk-Medium';
+}
+.hanken-semibold {
+  font-family: 'HankenGrotesk-SemiBold';
+}
+.inter-medium {
+  font-family: 'Inter-Medium';
 }
 .level {
-  font-size: 16px;
+  font-size: 1rem;
   border-radius: 100px;
+  width: 5.37rem;
 }
 .easy {
   border: 1px solid #97E3FF;
@@ -46,4 +104,16 @@
   border: 1px solid #FF9797;
   background-color: #522727;
   color: #FFAEAE;
+}
+@font-face {
+  font-family: 'HankenGrotesk-SemiBold';
+  src: url('./assets/fonts/HankenGrotesk-SemiBold.ttf');
+}
+@font-face {
+  font-family: 'HankenGrotesk-Medium';
+  src: url('./assets/fonts/HankenGrotesk-Medium.ttf');
+}
+@font-face {
+  font-family: 'Inter-Medium';
+  src: url('./assets/fonts/Inter-Medium.ttf');
 }
