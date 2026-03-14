@@ -1,15 +1,9 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 #root {
-  width: 100%;
-}
-.header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 100%;
 }
 .title {
@@ -29,17 +23,20 @@
   background-color: #181818;
 }
 .container {
-  margin-top: 1rem;
+  margin-top: 2rem;
   background-color: #161616;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
 }
 .cards-container {
   display: flex;
-  gap: 6rem;
+  gap: 3rem 4.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2.5rem;
+  margin-bottom: 3.5rem;
 }
 .cards {
   background-color: #252525;
@@ -51,31 +48,36 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1.2rem;
+  gap: 1rem;
+  padding: 2rem;
+  transition: transform 0.5s ease;
 }
-/* .d-flex {
-  display: flex;
+.cards:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
-.flex-column {
-  flex-direction: column;
-}
-.justify-content-center {
-  justify-content: center;
-} */
-.mb-05rem {
-  margin-bottom: 0.4rem;
+.cards:active {
+  transform: rotateY(360deg);
 }
 .font-small {
   font-size: 0.75rem;
 }
+.font-20 {
+  font-size: 1.25rem;
+}
 .font-medium {
   font-size: 1rem;
-  color: #C9C9C9;
 }
 .font-large {
- font-size: 1.5rem;
- color: white;
+  font-size: 1.5rem;
+  color: white;
 }
+.colorba {
+  color: #BABABA;
+}
+.colorwhite {
+  color: white;
+} 
 .hanken-medium {
   font-family: 'HankenGrotesk-Medium';
 }
@@ -88,7 +90,13 @@
 .level {
   font-size: 1rem;
   border-radius: 100px;
-  width: 5.37rem;
+  padding: 0.1rem 1.5rem;
+  
+}
+.level-answer {
+  font-size: 0.7rem;
+  border-radius: 100px;
+  padding: 0 1rem;
 }
 .easy {
   border: 1px solid #97E3FF;
@@ -105,6 +113,34 @@
   background-color: #522727;
   color: #FFAEAE;
 }
+.border-easy {
+  border: 1px solid #97E3FF;
+}
+.border-medium {
+  border: 1px solid #FFD6A8;
+}
+.border-hard {
+  border: 1px solid #FF9797;
+}
+.answer {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.answer-tag {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 @font-face {
   font-family: 'HankenGrotesk-SemiBold';
   src: url('./assets/fonts/HankenGrotesk-SemiBold.ttf');

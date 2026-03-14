@@ -1,10 +1,12 @@
 import './App.css'
-function Question({number, question}){
+import Level from './Level'
+function Question({ num, question, difficulty }) {
     return (
-        <div>
-            <p className='font-small inter-medium mb-05rem'>Question {number}</p>
-            <h3 className='font-large hanken-semibold'>{question}</h3> 
-        </div>
+        <>
+            <p className='font-small inter-medium'>Question {num}</p>
+            <h3 className='font-large hanken-semibold'>{question}</h3>
+            <Level label={difficulty} style={difficulty.toLowerCase()} levelcss='level' />
+        </>
     )
 }
 export default Question

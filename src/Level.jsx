@@ -1,7 +1,7 @@
 import './App.css'
-function Level({label, style}) {
+function Level({label, style, levelcss}) {
     return (
-        <div className={`level ${style} font-medium hanken-semibold`}>
+        <div className={`${levelcss} ${style} hanken-semibold`}>
             <h4>{label}</h4>
         </div>
     )
